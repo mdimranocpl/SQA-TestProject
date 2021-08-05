@@ -1,0 +1,15 @@
+<suite name = "STest">
+
+   <test name = "LoginTest">
+      <classes>
+         <class name = "com.bat.STest.Test.LoginTest" />
+      </classes>
+   </test>
+   
+      <test name = "AssignLeaveTest">
+      <classes>
+         <class name = "com.bat.STest.Test.AssignleavTest" />
+      </classes>
+   </test>
+
+</suite>
