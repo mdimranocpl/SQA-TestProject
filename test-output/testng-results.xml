@@ -2,28 +2,28 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-08-05T10:58:41 BDT" name="STest" finished-at="2021-08-05T10:58:59 BDT" duration-ms="17936">
+  <suite started-at="2021-08-05T17:31:54 BDT" name="STest" finished-at="2021-08-05T17:32:14 BDT" duration-ms="20482">
     <groups>
     </groups>
-    <test started-at="2021-08-05T10:58:41 BDT" name="LoginTest" finished-at="2021-08-05T10:58:57 BDT" duration-ms="15638">
+    <test started-at="2021-08-05T17:31:54 BDT" name="LoginTest" finished-at="2021-08-05T17:32:08 BDT" duration-ms="13672">
       <class name="com.bat.STest.Test.LoginTest">
-        <test-method signature="loginTestTitleVerify()[pri:0, instance:com.bat.STest.Test.LoginTest@e1de817]" started-at="2021-08-05T10:58:41 BDT" name="loginTestTitleVerify" finished-at="2021-08-05T10:58:50 BDT" duration-ms="9411" status="PASS">
+        <test-method signature="loginTestTitleVerify()[pri:0, instance:com.bat.STest.Test.LoginTest@e1de817]" started-at="2021-08-05T17:31:54 BDT" name="loginTestTitleVerify" finished-at="2021-08-05T17:32:02 BDT" duration-ms="8214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestTitleVerify -->
-        <test-method signature="logintest()[pri:0, instance:com.bat.STest.Test.LoginTest@e1de817]" started-at="2021-08-05T10:58:50 BDT" name="logintest" finished-at="2021-08-05T10:58:57 BDT" depends-on-methods="com.bat.STest.Test.LoginTest.loginTestTitleVerify" duration-ms="6151" status="PASS">
+        <test-method signature="logintest()[pri:0, instance:com.bat.STest.Test.LoginTest@e1de817]" started-at="2021-08-05T17:32:02 BDT" name="logintest" finished-at="2021-08-05T17:32:08 BDT" depends-on-methods="com.bat.STest.Test.LoginTest.loginTestTitleVerify" duration-ms="5380" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintest -->
       </class> <!-- com.bat.STest.Test.LoginTest -->
     </test> <!-- LoginTest -->
-    <test started-at="2021-08-05T10:58:57 BDT" name="AssignLeaveTest" finished-at="2021-08-05T10:58:59 BDT" duration-ms="2172">
+    <test started-at="2021-08-05T17:32:08 BDT" name="AssignLeaveTest" finished-at="2021-08-05T17:32:14 BDT" duration-ms="6695">
       <class name="com.bat.STest.Test.AssignleavTest">
-        <test-method signature="assignleaveButtonAndPageUrlVeryfi()[pri:0, instance:com.bat.STest.Test.AssignleavTest@7ea9e1e2]" started-at="2021-08-05T10:58:57 BDT" name="assignleaveButtonAndPageUrlVeryfi" finished-at="2021-08-05T10:58:59 BDT" duration-ms="2162" status="PASS">
+        <test-method signature="assignleaveButtonAndPageUrlVeryfi()[pri:0, instance:com.bat.STest.Test.AssignleavTest@101952da]" started-at="2021-08-05T17:32:08 BDT" name="assignleaveButtonAndPageUrlVeryfi" finished-at="2021-08-05T17:32:09 BDT" duration-ms="1653" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignleaveButtonAndPageUrlVeryfi -->
-        <test-method signature="assignleaveTest()[pri:0, instance:com.bat.STest.Test.AssignleavTest@7ea9e1e2]" started-at="2021-08-05T10:58:59 BDT" name="assignleaveTest" finished-at="2021-08-05T10:58:59 BDT" depends-on-methods="com.bat.STest.Test.AssignleavTest.assignleaveButtonAndPageUrlVeryfi" duration-ms="2" status="PASS">
+        <test-method signature="assignleaveTest()[pri:0, instance:com.bat.STest.Test.AssignleavTest@101952da]" started-at="2021-08-05T17:32:09 BDT" name="assignleaveTest" finished-at="2021-08-05T17:32:14 BDT" depends-on-methods="com.bat.STest.Test.AssignleavTest.assignleaveButtonAndPageUrlVeryfi" duration-ms="5033" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- assignleaveTest -->

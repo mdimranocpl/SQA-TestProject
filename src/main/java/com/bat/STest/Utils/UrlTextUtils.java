@@ -12,4 +12,5 @@ public class UrlTextUtils {
 
 		public static final String homePageTitle = "OrangeHRM";
 	}
+	
 }
