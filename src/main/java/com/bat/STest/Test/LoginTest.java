@@ -5,14 +5,17 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.bat.STest.DTO.LoginDTO;
 import com.bat.STest.DataProvider.LoginDataProvider;
 import com.bat.STest.Utils.DriverManager;
+import com.bat.STest.Utils.TestNGReporting;
 import com.bat.STest.Utils.UrlTextUtils;
 import com.bat.STest.Utils.XpathUtils;
 
+@Listeners(TestNGReporting.class)
 public class LoginTest {
 
 	private WebDriver driver = null;
@@ -25,7 +28,7 @@ public class LoginTest {
 		
 		//home page title verify
 		Assert.assertEquals(driver.getTitle(), UrlTextUtils.Text.homePageTitle);
-		System.out.println("Home Page Title Verify Successfully!");
+		
 	}
 
 	@Test(dependsOnMethods = "loginTestTitleVerify",dataProvider = "loginData", dataProviderClass = LoginDataProvider.class)
@@ -35,7 +38,7 @@ public class LoginTest {
 			driver.findElement(By.name(XpathUtils.LoginModiule.admin)).sendKeys(login.getUsername());
 			driver.findElement(By.xpath(XpathUtils.LoginModiule.password)).sendKeys(login.getPassword());
 			driver.findElement(By.id(XpathUtils.LoginModiule.submit)).click();
-			System.out.println("Login Successfully!");
+		
 		}
 	}
 }
