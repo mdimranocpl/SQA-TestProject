@@ -2,11 +2,8 @@ package com.bat.STest.Test;
 
 
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -29,15 +26,17 @@ public class AssignleavTest {
 		// verify assignLeave Button is available or not
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath(XpathUtils.AssignLeaveModiule.assignLeaveButton)));
+		System.out.println("Assign Leave Button Verify Successfully!");
 
 		// click on assign leave button
 		driver.findElement(By.xpath(XpathUtils.AssignLeaveModiule.assignLeaveButton)).click();
 
 		// assign leave page URL verify
 		Assert.assertEquals(driver.getCurrentUrl(), UrlTextUtils.Url.assignLeavePageUrl);
+		System.out.println("Assign Leave Page URL Verify Successfully!");
 	}
 
-	@SuppressWarnings("unchecked")
+
 	@Test(dependsOnMethods = "assignleaveButtonAndPageUrlVeryfi")
 	public void assignleaveTest() {
 
@@ -98,6 +97,7 @@ public class AssignleavTest {
 		driver.findElement(By.xpath(XpathUtils.AssignLeaveModiule.comment)).sendKeys("No");
 
 		driver.findElement(By.xpath(XpathUtils.AssignLeaveModiule.assign_button)).click();
+		System.out.println("Assign Leave Form Submit Successfully!");
 
 	}
 }

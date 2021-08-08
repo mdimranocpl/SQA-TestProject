@@ -25,6 +25,7 @@ public class LoginTest {
 		
 		//home page title verify
 		Assert.assertEquals(driver.getTitle(), UrlTextUtils.Text.homePageTitle);
+		System.out.println("Home Page Title Verify Successfully!");
 	}
 
 	@Test(dependsOnMethods = "loginTestTitleVerify",dataProvider = "loginData", dataProviderClass = LoginDataProvider.class)
@@ -34,6 +35,7 @@ public class LoginTest {
 			driver.findElement(By.name(XpathUtils.LoginModiule.admin)).sendKeys(login.getUsername());
 			driver.findElement(By.xpath(XpathUtils.LoginModiule.password)).sendKeys(login.getPassword());
 			driver.findElement(By.id(XpathUtils.LoginModiule.submit)).click();
+			System.out.println("Login Successfully!");
 		}
 	}
 }
