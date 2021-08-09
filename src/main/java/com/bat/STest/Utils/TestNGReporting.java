@@ -1,6 +1,12 @@
 package com.bat.STest.Utils;
 
+import java.io.File;
+
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -25,6 +31,18 @@ public class TestNGReporting implements ITestListener {
 	
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test has been started : " + result.getName());
+		
+		//for screenshot
+		driver=DriverManager.driver;
+		File srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File desfile=new File("C:\\Users\\pc\\Desktop\\selenium-screenshort\\Screenshort.png");
+		try {
+		FileHandler.copy(srcfile,desfile);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		System.out.println("Screenshot of failed page has been taken");
+		//for screenshot
 	}
 	
 	public void onTestSkipped(ITestResult result) {
