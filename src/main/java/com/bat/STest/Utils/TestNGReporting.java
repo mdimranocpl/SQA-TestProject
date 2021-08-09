@@ -1,7 +1,7 @@
 package com.bat.STest.Utils;
 
 import java.io.File;
-
+import java.util.Random;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -34,8 +34,10 @@ public class TestNGReporting implements ITestListener {
 		
 		//for screenshot
 		driver=DriverManager.driver;
+		Random random = new Random();  
+		int filenum = random.nextInt(1000); 
 		File srcfile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		File desfile=new File("C:\\Users\\pc\\Desktop\\selenium-screenshort\\Screenshort.png");
+		File desfile=new File("C:\\Users\\pc\\Desktop\\selenium-screenshort\\SeleniumScreenshort"+filenum+".png");
 		try {
 		FileHandler.copy(srcfile,desfile);
 		} catch (Exception e) {
