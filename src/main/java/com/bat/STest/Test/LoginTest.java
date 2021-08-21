@@ -34,7 +34,6 @@ public class LoginTest {
 	@Test(dependsOnMethods = "loginTestTitleVerify",dataProvider = "loginData", dataProviderClass = LoginDataProvider.class)
 	public void logintest(List<LoginDTO> logindata) {
 		for(LoginDTO login:logindata) {
-			
 			driver.findElement(By.name(XpathUtils.LoginModiule.admin)).sendKeys(login.getUsername());
 			driver.findElement(By.xpath(XpathUtils.LoginModiule.password)).sendKeys(login.getPassword());
 			driver.findElement(By.id(XpathUtils.LoginModiule.submit)).click();
